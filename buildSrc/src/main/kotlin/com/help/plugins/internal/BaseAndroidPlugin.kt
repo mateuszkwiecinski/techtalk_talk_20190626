@@ -10,10 +10,12 @@ internal abstract class BaseAndroidPlugin : Plugin<Project> {
 
     override fun apply(project: Project) = with(project) {
         pluginManager.apply("kotlin-android")
-        with(repositories){
+        with(repositories) {
             google()
             jcenter()
         }
+
+        configureDependencies()
 
         extensions.getByType(TestedExtension::class.java).apply {
             compileSdkVersion(28)

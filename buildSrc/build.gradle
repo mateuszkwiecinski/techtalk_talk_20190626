@@ -36,5 +36,9 @@ gradlePlugin {
             id = 'help-library.android'
             implementationClass = 'com.help.plugins.AndroidLibraryPlugin'
         }
+        kotlinLibraryPlugin {
+            id = 'help-library.kotlin'
+            implementationClass = 'com.help.plugins.KotlinLibraryPlugin'
+        }
     }
 }

@@ -1,0 +1,1 @@
+apply plugin: 'help-library.kotlin'

@@ -1,0 +1,5 @@
+apply plugin: 'help-library.kotlin'
+
+dependencies {
+    implementation project(":domainInterfaces")
+}
